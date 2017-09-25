@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Game Window</title>
+		<title>Main Menu</title>
 		<style>
-			canvas {
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				background: transparent;
+			html {
+				background: url(imgs/Backgrounds/space_diner_outside.jpg)
+				no-repeat center fixed;
+				background-size:cover;
 			}
-      .button {
-				position: absolute;
-				top: 200px;
-				left: 450px;
+      #btnStartGame {
+				margin: auto;
 				color: #FF7F00;
 				font-family: Helvetica, sans-serif;
 				font-size: 30px;
 				cursor: pointer;
         background-color: lightblue;
 			}
-			.button span {
-				font-size: 20px;
+			#btnDifficulty {
+				color: #FF7F00;
+				font-family: Helvetica, sans-serif;
+				font-size: 30px;
 				cursor: pointer;
-				position: relative;
-				left: 50px;
+        background-color: lightblue;
 			}
 		</style>
 	</head>
-	<body onload="init()">
-		<!-- The canvas for the panning background -->
-		<canvas id="background" width="1056" height="594">
-			Your browser does not support canvas. Please try again with a different browser.
-		</canvas>
-    <div class="button" id="btnStartGame" onclick="alert("Start Game")">
-      Play
-    </div>
-    <div class="button" id="btnDifficulty" onclick="alert("Difficulty")">
-      Difficulty
-    </div>
-    <audio src="" preload=true loop=true></audio>
+	<body onload="alert('Hello traveler!')">
+		<!--<img id="background" src="imgs/space_diner_outside.jpg"><img>-->
+		<div>
+			<button id="btnStartGame" onclick="alert('Start Game')">
+	    	Play
+	    </button>
+	    <button id="btnDifficulty" onclick="alert('Difficulty')">
+	      Difficulty
+	    </button>
+		</div>
 
+    <audio src="music/space_lounge.wav" type="audio/wav" preload="auto" loop autoplay>
+			There would be a song playing...
+		</audio>
+
+		<!-- Put scripts at the end = better page load performance? -->
+		<script
+		   src="http://ajax.microsoft.com/ajax/jquery/jquery-1.7.min.js"
+		   type="text/javascript">
+		</script>
 		<script src="menucode.js"></script>
-    <script>alert("hello")</script>
+    <script>alert("Finished loading.")</script>
 	</body>
 </html>

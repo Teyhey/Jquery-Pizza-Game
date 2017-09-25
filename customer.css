@@ -1,0 +1,23 @@
+#GreenMan {
+    position:center;
+    top:100px;
+    left:100px;
+    z-index:1;
+}
+
+#btnKitchen {
+				margin: auto;
+				color: #FF7F00;
+				font-family: Helvetica, sans-serif;
+				font-size: 30px;
+				cursor: pointer;
+        background-color: lightblue;
+			}
+
+#btnStats {
+				color: #FF7F00;
+				font-family: Helvetica, sans-serif;
+				font-size: 30px;
+				cursor: pointer;
+        background-color: lightblue;
+			}
